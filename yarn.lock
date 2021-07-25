@@ -1108,6 +1108,11 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
+colors@*:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
+  integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
+
 combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
@@ -2777,6 +2782,11 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+jtest@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/jtest/-/jtest-0.0.1.tgz#a0dc13911a47f9b2b795d83f91cd3b3e8d780fc9"
+  integrity sha1-oNwTkRpH+bK3ldg/kc07Po14D8k=
+
 keyv@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-3.1.0.tgz#ecc228486f69991e49e9476485a5be1e8fc5c4d9"
@@ -3070,6 +3080,13 @@ node-notifier@^8.0.0:
     shellwords "^0.1.1"
     uuid "^8.3.0"
     which "^2.0.2"
+
+nodeman@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/nodeman/-/nodeman-1.1.2.tgz#78128508f7540dbbffbf7f1093222e09d58e1b64"
+  integrity sha1-eBKFCPdUDbv/v38QkyIuCdWOG2Q=
+  dependencies:
+    colors "*"
 
 nodemon@^2.0.7:
   version "2.0.7"
