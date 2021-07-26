@@ -29,7 +29,7 @@ app.post('/users', (request, response) => {
   // Complete aqui
   const { name, username } = request.body;
 
-  const userAlreadExists = user.some(user => user.username == username);
+  const userAlreadExists = users.some(user => user.username === username);
 
   if(userAlreadExists) {
     return response.status(400).json({erro: "User Already Exists"})
@@ -42,7 +42,7 @@ app.post('/users', (request, response) => {
   todos: []
   }
 
-  user.push(user);
+  users.push(user);
 
   return response.status(201).json(user);
 });
@@ -63,7 +63,7 @@ app.post('/todos', checksExistsUserAccount, (request, response) => {
     id: uuidv4(),
     title,
     done: false,
-    deadline: new Date(deadline),
+    deadline: new Date(JSON.parse(deadline)),
     created_at: new Date()
   }
 
@@ -107,13 +107,7 @@ app.delete('/todos/:id', checksExistsUserAccount, (request, response) => {
   const { user } = request;
   const { id } = request.params;
 
-  const todo = user.todos.findIndex(todo => todo.id === id);
-
-  if(!todo === -1) {
-    return response.status(404).json({erro: "Todo not found"}); 
-  }
-
-  user.todos.splice(todo, 1);
+  user.delete;
 
   return response.status(204).send();
 });
